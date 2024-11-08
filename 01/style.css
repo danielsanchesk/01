@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+:root{
+--bg-color: purple;
+--Primary-color: red;
+--Secundary-color: #FF004D;
+--Terciary-color: #FAEF5D;
+--Quaternary-color: #06D001;
+--White-color: #fff;
+--icons-color: #C8ACD6;
+--font: "Outfit", sans-serif;
+}
+
+*{
+margin: 0px;
+padding: 0px;
+font-family:"Outfit", sans-serif ;
+box-sizing: border-box;
+text-decoration: none;
+list-style:none ;
+}
+
+body{
+background-color: var(--bg-color);
+}
+
+nav{
+    width: 100%;
+    height: 75px;
+    background-color: var(--Primary-color);
+    color: var(--White-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 50px;
+    position: relative;
+    top: 2rem;
+    z-index:1;
+    border: 1.2px var(--Secundary-color) solid;
+    border-radius: 35px;
+}
+
+
+ .logo{
+    color: gray;
+    font-size: 2rem;
+    text-align: left;
+    font-weight: bold;
+    display: flex;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    width: 65%;
+}
+
+.menu li{
+    margin-left: 5rem;
+}
+
+.menu li a{
+    font-size: 19px;
+    color: var(--White-color);
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.menu li a:hover{
+color: var(--Terciary-color);
+}
+
+.search{
+display: flex;
+align-items: center;
+margin-right: 0;
+}
+
+.search form{
+display: flex;
+margin: 0;
+}
+
+
+.search input{
+    padding: 10px;
+    border:  1px solid var(--White-color);
+    outline: none;
+    border-radius:5px ;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.search input:hover{
+    border: 1px solid var(--Secundary-color);
+}
+
+.search button{
+    padding: 10px;
+    background-color: var(--Primary-color);
+    border: none;
+    border-radius: 5px;
+    color: var(--White-color);
+    font-size: 19px;
+    cursor: pointer;
+     box-shadow: 2px 2.5px 2.5px 2px var(--bg-color) ;
+}
+
+
+
+.search button:hover{
+    background-color: var(--Secundary-color);
+    color: var(--Terciary-color);
+    transition: 0.5s ease;
+}
+
+.post-filter-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1.5rem;
+    margin-top: 7rem !important;
+    
+}
+
+.filter-item{
+font-size: 2rem;
+font-weight: 500;
+cursor: pointer;
+z-index: 2;
+padding: 4px 30px;
+border-radius: 4px;
+font-weight: bold;
+background-color: var(--Primary-color);
+border: 1px solid var(--Secundary-color);
+color: var(--White-color);
+}
+
+.active-filter{
+    background-color: var(--Secundary-color);
+    color: var(--Terciary-color);
+    padding: 4px 30px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+
+.filter-item:hover{
+background-color:gray;
+border: 1px solid var(--Secundary-color);
+color: var(--Terciary-color);
+transition: 0.5s ease;
+}
+
+.menu li:hover{
+color: var(--Terciary-color);
+border: 1px solid var(--Secundary-color);
+background-color: var(--Secundary-color);
+cursor: pointer;
+border-radius: 5px 5px 5px 5px;
+transition: 0.5s ease;
+}
+
+.subicons {
+color:var(--Quaternary-color) ;
+display: flex;
+font-size: 1rem;
+font-weight: 400;
+text-decoration: none;
+margin-top: 20px;
+}
+
+.subicons span{
+    padding: 5px;
+    color: var(--Secundary-color);
+    font-family:var(--font) ;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.subicons i{
+    padding: 5px 15px;
+    color: var(--Secundary-color);
+}
+
+.post-container{
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+}
+
+.post-box{
+   background-color: black;
+   justify-content: space-evenly;
+   display: inline-block;
+   padding: 15px;
+   border-radius: 0.5rem;
+   border: 2px solid var(--Secundary-color);
+}
+
+.post-img{
+width: 100%;
+height: 200px;
+object-fit: cover;
+object-position: center;
+border-radius:0.5rem ;
+border: 2px solid var(--Secundary-color);
+}
+
+.category{
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+}
+
+.post-title{
+font-size: 1.3rem;
+font-weight: 600;
+color: blueviolet;
+background-color: red;
+text-align: center;
+display: -webkit-box;
+-webkit-box-orient: vertical;
+overflow: hidden;
+}
+
+.post-title:hover{
+background-color: var(--Secundary-color);
+color: var(--Terciary-color);
+transition: 0.3s ease-in-out;
+}
+
+.post{
+   display: grid;
+   grid-template-columns: repeat(auto-fit,minmax(280px,auto));
+   justify-content: center;
+   gap:1.5rem;
+}
+
+.categoria{
+    margin-top: 50px;
+    text-align: left;
+    justify-content: left;
+    color: gray;
+    text-decoration: underline;
+}
